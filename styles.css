@@ -1,0 +1,95 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: block;
+    background-image: linear-gradient(to right, #1f3f44, rgb(40 187 180));
+    background-size: cover;
+}
+.name{
+    text-align: center;
+    color: #32d966;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.wrapper {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    margin: 30px auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.toggle-btn,.toggle-btn1{
+    width: 70px;
+    height: 25px;
+    background: gray;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn > .inner-circle, .toggle-btn1 > .inner-circle {
+	width: 30px;
+	height: 27px;
+	background: white;
+	border-radius:50%;
+	transition: all 300ms ease-in-out;
+}
+.toggle-btn.active{
+	
+	background: #15e1d7;
+	box-shadow: 0 0 10px #15e1d7, 0 0 40px #15e1d7, 0 0 80px #15e1d7;
+	transition-delay: 0.5s;
+}
+.toggle-btn1.active{
+	
+	background: #15e1d7;
+	box-shadow: 0 0 10px #15e1d7, 0 0 40px #15e1d7, 0 0 80px #15e1d7;
+	transition-delay: 0.5s;
+}
+
+.toggle-btn.active>.inner-circle,.toggle-btn1.active>.inner-circle{
+	margin-left: 40px;
+}
+.icon1{	
+	color: black;
+	margin: 10px auto;
+}
+.view-sensor .item-sensor .value-sensor{
+    font-size: 30px;
+    font-family:sans-serif;
+    
+    color:rgb(255, 0, 70);
+    font-weight: bold;
+
+}
+.view-sensor .item-sensor .name-sensor{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 4px solid rgb(0, 255, 185);
+}
+.view-sensor{
+    margin-left: 30px;
+}
+.item-sensor
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-sensor{
+    flex-grow: 2;
+    width: 130px;
+}
+.value-sensor{
+    flex-grow: 1;
+}
